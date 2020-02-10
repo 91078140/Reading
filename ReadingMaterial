@@ -1,0 +1,27 @@
+abstract public class ReadingMaterial
+{
+    protected String typeOfBook;
+    protected String title;
+    protected String author;
+    protected int pages;
+    protected boolean pictures;
+
+    public ReadingMaterial(String typeOfBook, String title, String author, int pages, boolean pictures)
+    {
+        this.typeOfBook = typeOfBook;
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.pictures = pictures;
+    }
+
+    public String toString()
+    {
+        String output = "Type of Reading: " + typeOfBook;
+        output += "\nTitle: " + title;
+        output += "\nAuthorA: " + author;
+        output += "\nPage Count: " + pages;
+        output += "\nGraphics: " + pictures;
+        return output;
+    }
+}//end of parent class
