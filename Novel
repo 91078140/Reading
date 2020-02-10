@@ -1,0 +1,16 @@
+public class Novel extends ReadingMaterial
+{
+    private boolean fiction;
+
+    public Novel(String typeOfBook, String title, String author, int pages, boolean pictures, boolean fiction)
+    {
+        super(typeOfBook, title, author, pages, pictures);
+        this.fiction = fiction;
+    }
+
+    public String toString()
+    {
+        String output = super.toString() + "\nFiction: " + fiction;
+        return output;
+    }
+}//end of child class novel
