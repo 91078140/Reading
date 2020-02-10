@@ -1,0 +1,16 @@
+public class Dictionary extends ReadingMaterial
+{
+    private int definitions;
+
+    public Dictionary(String typeOfBook, String title, String author, int pages, boolean pictures, int definitions)
+    {
+        super(typeOfBook, title, author, pages, pictures);
+        this.definitions = definitions;
+    }
+
+    public String toString()
+    {
+        String output = super.toString() + "\nDefinition count: " + definitions;
+        return output;
+    }
+}//end of child class dictionary
