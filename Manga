@@ -1,0 +1,16 @@
+public class Manga extends ReadingMaterial
+{
+    private boolean anime;
+
+    public Manga(String typeOfBook, String title, String author, int pages, boolean pictures, boolean anime)
+    {
+        super(typeOfBook, title, author, pages, pictures);
+        this.anime = anime;
+    }
+
+    public String toString()
+    {
+        String output = super.toString() + "\nHas an anime adaptation: " + anime;
+        return output;
+    }
+}//end of child class manga
